@@ -19,17 +19,17 @@ from guided_diffusion.resample import UniformSampler
 set_determinism(123)
 import os
 
-data_dir = "./datasets/brats2020/MICCAI_BraTS2020_TrainingData/"
+data_dir = "./BraTS2020_TrainingData/MICCAI_BraTS2020_TrainingData/"
 logdir = "./logs_brats/diffusion_seg_all_loss_embed/"
 
 model_save_path = os.path.join(logdir, "model")
 
-env = "DDP" # or env = "pytorch" if you only have one gpu.
+env = "pytorch" # or env = "pytorch" if you only have one gpu.
 
 max_epoch = 300
 batch_size = 2
 val_every = 10
-num_gpus = 4
+num_gpus = 1
 device = "cuda:0"
 
 number_modality = 4
