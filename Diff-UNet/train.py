@@ -28,7 +28,7 @@ env = "pytorch" # or env = "pytorch" if you only have one gpu.
 
 max_epoch = 300
 batch_size = 2
-val_every = 10
+val_every = 20
 num_gpus = 1
 device = "cuda:0"
 
